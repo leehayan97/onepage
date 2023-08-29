@@ -38,7 +38,7 @@ body{
 }
 .top a:hover{
   background: url(../image/top_on.png) no-repeat;
-  border: 3px solid #000;
+  border: 3px solid #3399cc;
   border-radius: 50%;
 }
 
@@ -46,7 +46,7 @@ body{
 
 header{
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #000;
   position: fixed;
   z-index: 5;
@@ -79,7 +79,7 @@ nav h1{
   padding: 0 10px;
   color: #666;
   transition: 0.5s;
-  font-size: 13px;
+  font-size: 12px;
 }
 .utilmenu ul li:hover{
   color: #fff;
@@ -98,29 +98,11 @@ nav h1{
 .gnb ul li{
   color: #d2d2d2;
   font-size:25px;
-  padding: 24px  40px;
+  padding: 40px 40px;
   transition: 0.2s;
 }
-.gnb ul li:nth-child(1):hover{
-  height: 29px;
-  border-bottom: 3px solid #fff;
-  border-radius: 1px;
-  color: #fff;
-}
-.gnb ul li:nth-child(2):hover{
-  height: 29px;
-  border-bottom: 3px solid #fff;
-  border-radius: 1px;
-  color: #fff;
-}
-.gnb ul li:nth-child(3):hover{
-  height: 29px;
-  border-bottom: 3px solid #fff;
-  border-radius: 1px;
-  color: #fff;
-}
-.gnb ul li:nth-child(4):hover{
-  height: 29px;
+.gnb ul li:hover{
+  height: 17.5px;
   border-bottom: 3px solid #fff;
   border-radius: 1px;
   color: #fff;
@@ -155,7 +137,6 @@ section{
   width: 2000px;
   height: 700px;
   animation: loop 15s infinite;
-
 }
 .slide-container:hover img{
   animation-play-state:paused;
@@ -175,11 +156,17 @@ section{
 
 #album{
   width: 1400px;
+  height: 400px;
   margin: 200px auto;
-  /* border: 5px solid #000; */
   border-radius: 20px;
   position: relative;
   font-family: 'KCC-Ganpan';
+}
+#album h4{
+  font-size: 45px;
+  margin-bottom: 30px;
+  font-family: 'Concert One', cursive;
+  color: rgb(244, 141, 164);
 }
 .album_img{
   display: flex;
@@ -190,7 +177,6 @@ section{
 .album_img img{
   height: 300px;
   z-index: -1;
-  
 }
 .album_img a{position: relative;}
 .album_img a:nth-of-type(1)::before{
@@ -240,8 +226,6 @@ section{
   border-radius: 20px;
   margin-right: 20px;
 }
-/* .alb_text h2:hover::before{opacity: 1;} */
-
 
 #member{
   font-family: 'GmarketSansMedium';
@@ -455,6 +439,52 @@ section{
   width: 100%;
   height: 100%;
   right: 0;
+}
+
+#gallery{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+#gallery .gal_box{
+  width: 1400px;
+  justify-content: center;
+  margin: auto;
+}
+#gallery .gal_box h5{
+  font-size: 45px;
+  color: rgb(244, 141, 164);
+  margin-left: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.img_box{
+  margin: auto;
+  width: 1325px;
+}
+.img_box .col{
+  margin-top: 5px;
+}
+.img_box img{
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  margin: 0;
+  transition: 0.3s;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+.img_box img:hover{
+  transform: translateY(-20px);
+  filter: brightness(100%);
+  border-radius: 10px;
+  box-shadow: 0 1px 5px #000;
+}
+.img_box .col img:hover{
+  transform: translateY(20px);
+  filter: brightness(100%);
 }
 
 #mv{
